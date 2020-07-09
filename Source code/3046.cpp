@@ -2,17 +2,16 @@
 #include <algorithm>
 using namespace std;
 
+/*
+평균구하는 공식만 알면 쉽다!
+*/
 
 int main() {
 
-	int X, cnt=1;
-	cin >> X;
+	int R1, R2, S;
+	cin >> R1 >> S;
+	cout << 2 * S - R1;
 
-	while (X > 1) {
-		cnt += X % 2;
-		X /= 2;
-	}
-	
-	cout << cnt;
+
 	return 0;
 }
